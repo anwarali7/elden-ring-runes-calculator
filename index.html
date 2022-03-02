@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Runes level Elden Ring</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script defer type="module" src="app.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h2>Elden Ring - Runes Calculator</h2>
+    <p>
+      Calculate the amount of runes required to reach your desired level.
+    </p>
+    <p>Max level: 206.</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <label for="your-level">Your level :</label>
+      <input type="number" name="your-level" id="your-level">
+    </div>
+    <div class="row">
+      <label for="target-level">Target level :</label>
+      <input type="number" name="target-level" id="target-level" min="1" max="205">
+    </div>
+    <div class="row">
+      <label for="runes-required">Runes required :</label>
+      <input type="number" name="runes-required" id="runes-required" readonly>
+    </div>
+  </div>
+
+  <footer>
+    Data used : <a href="https://eldenring.wiki.fextralife.com/Level" target="_blank">https://eldenring.wiki.fextralife.com/Level</a>
+  </footer>
+</body>
+
+</html>

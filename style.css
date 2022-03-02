@@ -1,0 +1,50 @@
+html, body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.container {
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 10px 10px 20px 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.row > * {
+  width: 100%;
+}
+
+.row > label {
+  text-align: right;
+  margin-right: 5px;
+}
+
+input {
+  flex: 80%;
+  height: 1rem;
+  font-size: 1rem;
+}
+
+a[target="_blank"]::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 0.2rem 0 0.4rem;
+}
+
+footer {
+  max-width: 400px;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
