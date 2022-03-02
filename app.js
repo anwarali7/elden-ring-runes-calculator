@@ -18,12 +18,12 @@ const calculate = () => {
   runesRequiredInput.value = runesRequired;
 }
 
-const handleKeyUp = () => {
+const handleInputChange = () => {
   if ((yourLevelInput.value !== "")
     && (targetLevelInput.value !== "")) {
     calculate();
   }
 }
 
-yourLevelInput.addEventListener('input', handleKeyUp);
-targetLevelInput.addEventListener('input', handleKeyUp);
+yourLevelInput.addEventListener('input', handleInputChange);
+targetLevelInput.addEventListener('input', handleInputChange);
