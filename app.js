@@ -1,4 +1,4 @@
-import values from "/requiredForNextLevel.js";
+import values from "../requiredForNextLevel.js";
 
 const yourLevelInput = document.getElementById('your-level');
 const targetLevelInput = document.getElementById('target-level');
