@@ -1,20 +1,15 @@
-import values from "/elden-ring-runes-calculator/requiredForNextLevel.js";
+import values from "/elden-ring-runes-calculator/required.js";
 
 const yourLevelInput = document.getElementById('your-level');
 const targetLevelInput = document.getElementById('target-level');
-const runesRequiredInput = document.getElementById('runes-required')
+const runesRequiredInput = document.getElementById('runes-required');
 
 const calculate = () => {
   let level = parseInt(yourLevelInput.value)
   let target = parseInt(targetLevelInput.value);
 
-  let levelsRequired = target - level;
-
-  let runesRequired = 0;
-  for (let i = 0; i < levelsRequired; i++) {
-    runesRequired += values[level + i - 1];
-  }
-
+  let runesRequired = values[target-1] - values[level-1];
+  runesRequired = runesRequired.toLocaleString();
   runesRequiredInput.value = runesRequired;
 }
 

@@ -17,21 +17,21 @@
     <p>
       Calculate the amount of runes required to reach your desired level.
     </p>
-    <p>Max level: 206.</p>
+    <p>Max level: 501.</p>
   </div>
 
   <div class="container">
     <div class="row">
       <label for="your-level">Your level :</label>
-      <input type="number" name="your-level" id="your-level">
+      <input type="number" name="your-level" id="your-level" min="1" max="500">
     </div>
     <div class="row">
       <label for="target-level">Target level :</label>
-      <input type="number" name="target-level" id="target-level" min="1" max="205">
+      <input type="number" name="target-level" id="target-level" min="1" max="501">
     </div>
     <div class="row">
       <label for="runes-required">Runes required :</label>
-      <input type="number" name="runes-required" id="runes-required" readonly>
+      <input type="text" name="runes-required" id="runes-required" readonly>
     </div>
   </div>
 
