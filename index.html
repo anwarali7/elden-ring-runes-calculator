@@ -11,32 +11,34 @@
   <script defer type="module" src="app.js"></script>
 </head>
 
-<body>
-  <div class="header">
+<body class="dark">
+  <button type="button" class="theme-toggle">Light Mode</button>
+
+  <header>
     <h2>Elden Ring - Runes Calculator</h2>
     <p>
       Calculate the amount of runes required to reach your desired level.
     </p>
-    <p>Max level: 501.</p>
-  </div>
-
-  <div class="container">
+    <p>Max level: 713.</p>
+  </header>
+  
+  <main>
     <div class="row">
-      <label for="your-level">Your level :</label>
-      <input type="number" name="your-level" id="your-level" min="1" max="500">
+      <label for="current-level">Current level:</label>
+      <input type="number" name="current-level" id="current-level" min="1" max="712">
     </div>
     <div class="row">
-      <label for="target-level">Target level :</label>
-      <input type="number" name="target-level" id="target-level" min="1" max="501">
+      <label for="target-level">Target level:</label>
+      <input type="number" name="target-level" id="target-level" min="1" max="713">
     </div>
     <div class="row">
-      <label for="runes-required">Runes required :</label>
+      <label for="runes-required">Runes required:</label>
       <input type="text" name="runes-required" id="runes-required" readonly>
     </div>
-  </div>
+  </main>
 
   <footer>
-    Data used : <a href="https://eldenring.wiki.fextralife.com/Level" target="_blank">https://eldenring.wiki.fextralife.com/Level</a>
+    Data used: <a href="https://eldenring.wiki.fextralife.com/Level" target="_blank">https://eldenring.wiki.fextralife.com/Level</a>
   </footer>
 </body>
 

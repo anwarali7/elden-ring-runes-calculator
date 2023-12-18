@@ -1,15 +1,19 @@
+* {
+  transition: background-color 0.2s ease;
+}
+
 html, body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
+header {
   max-width: 350px;
   margin: 0 auto;
   text-align: left;
 }
 
-.container {
+main {
   max-width: 250px;
   margin: 0 auto;
   padding: 10px 10px 20px 10px;
@@ -47,4 +51,33 @@ footer {
   width: fit-content;
   margin: 0 auto;
   font-size: 0.9rem;
+}
+
+.dark {
+  background-color: #292c35; /* #222 */
+  color: #ddd;
+}
+
+.dark a {
+  color: #ddd;
+}
+
+.dark a:hover {
+  color: #fff;
+}
+
+.dark a::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABtSURBVChTbZDBDcAgCEWxU7iEJxmDJZzMhby5hFvYSiGRwLvwAy8hkGqtGwLGGJJ+0v6QzCCiJIBSCvTeObN4DxWVWmtcH+kbbmnOyT0nRtLZaMScs5MUI661gIiMpNe71UeOCI+JcH+MQER4ARzHNysz1WwKAAAAAElFTkSuQmCC);
+}
+
+.dark input {
+  background-color: #414553;
+  color: #ddd;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
 }
