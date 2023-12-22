@@ -19,7 +19,6 @@ const calculate = () => {
     cost = Math.floor(cost);
     totalCost += cost;
     cost = cost.toLocaleString();
-    console.log(`Level ${i}: ${cost}`);
   }
 
   totalCost = totalCost.toLocaleString();
