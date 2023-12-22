@@ -19,6 +19,7 @@ const calculate = () => {
     cost = Math.floor(cost);
     totalCost += cost;
     cost = cost.toLocaleString();
+    // test
   }
 
   totalCost = totalCost.toLocaleString();
